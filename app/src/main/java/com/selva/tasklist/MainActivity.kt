@@ -1,4 +1,4 @@
-package com.selva.tasklist.ui
+package com.selva.tasklist
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
