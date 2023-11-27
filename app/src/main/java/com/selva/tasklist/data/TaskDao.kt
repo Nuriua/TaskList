@@ -1,16 +1,19 @@
 package com.selva.tasklist.data
 
-import androidx.room.Dao
-import androidx.room.Insert
-import androidx.room.OnConflictStrategy
-import androidx.room.Update
+import androidx.room.*
+import kotlinx.coroutines.flow.Flow
 
 @Dao
 interface TaskDao {
+    @Query("SELECT * FROM task_table")
+    fun getTasks(): Flow<List<Task>>
+
     @Insert(onConflict = OnConflictStrategy.REPLACE)
     suspend fun insert(task: Task)
 
     @Update
     suspend fun update(task: Task)
-    //4 video 6:37
+    
+    @Delete
+    suspend fun delete(task: Task)
 }
