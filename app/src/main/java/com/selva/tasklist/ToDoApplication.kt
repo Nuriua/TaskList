@@ -1,4 +1,4 @@
-package com.selva.tasklist.ui
+package com.selva.tasklist
 
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
