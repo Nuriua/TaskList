@@ -9,5 +9,6 @@
         app:showAsAction="always|collapseActionView"/>
 
     <item
-
+        android:icon="@drawable/ic_sort"
+        android:title="Sort"
 </menu>
