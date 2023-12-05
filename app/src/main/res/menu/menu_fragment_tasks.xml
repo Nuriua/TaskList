@@ -16,6 +16,7 @@
         <menu>
             <item
                 android:id="@+id/action_sort_by_name"
+                android:title="Sort by name created"/>
 
         </menu>
     </item>
